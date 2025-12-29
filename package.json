@@ -1,0 +1,11 @@
+{
+  "name": "tarot-app",
+  "version": "0.0.1",
+  "repository": "https://github.com/codydwyer/tarot-app.git",
+  "author": "Cody Dwyer",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

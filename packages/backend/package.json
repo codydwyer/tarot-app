@@ -1,0 +1,17 @@
+{
+  "name": "@tarot-app/backend",
+  "version": "0.0.0",
+  "repository": "https://github.com/codydwyer/tarot-app.git",
+  "author": "Cody Dwyer",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "graphql": "^16.12.0",
+    "graphql-http": "^1.22.4"
+  }
+}
