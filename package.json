@@ -5,12 +5,12 @@
   "author": "Cody Dwyer",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "frontend",
-    "graphql"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
-    "dev": "concurrently \"yarn workspace graphql dev\" \"yarn workspace frontend dev\""
+    "dev:frontend": "yarn --cwd packages/frontend dev",
+    "dev:graphql": "yarn --cwd packages/graphql dev",
+    "dev:database": "yarn --cwd packages/database dev",
+    "dev": "concurrently \"yarn dev:database\" \"yarn dev:graphql\" \"yarn dev:frontend\""
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
