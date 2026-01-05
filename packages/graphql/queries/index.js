@@ -1,40 +1,19 @@
 import { 
   GraphQLObjectType, 
-  GraphQLString 
 } from 'graphql';
 
-import { CardType, DeckType, SpreadType, ThemeType } from '../types/index.js';
-import { cardResolver } from '../resolvers/index.js';
+import cardQuery from './cardQuery.js';
+import deckQuery from './deckQuery.js';
+import spreadQuery from './spreadQuery.js';
+import themeQuery from './themeQuery.js';
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
-    card: {
-      type: CardType,
-      args: { id: { type: GraphQLString } },
-      resolve: cardResolver
-    },
-    deck: {
-      type: DeckType,
-      args: { id: { type: GraphQLString } },
-      resolve: (parent, args) => {
-        return args.id;
-      }
-    },
-    spread: {
-      type: SpreadType,
-      args: { id: { type: GraphQLString } },
-      resolve: (parent, args) => {
-        return args.id;
-      }
-    },
-    theme: {
-      type: ThemeType,
-      args: { id: { type: GraphQLString } },
-      resolve: (parent, args) => {
-        return args.id;
-      }
-    }
+    card: cardQuery,
+    deck: deckQuery,
+    spread: spreadQuery,
+    theme: themeQuery
   }
 })
 
