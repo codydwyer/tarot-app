@@ -1,14 +1,16 @@
 import type { ReactElement } from 'react';
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+
 import { ApolloProvider } from "@apollo/client/react";
+import { Provider } from 'react-redux';
+
+import client from './apollo';
+import { store } from '@redux/index';
 
 import App from './App';
 
-const client = new ApolloClient({
-  link: new HttpLink({ uri: 'http://localhost:4000/graphql' }),
-  cache: new InMemoryCache()
-});
 
 export default ():ReactElement => <ApolloProvider client={client}>
-  <App />
-  </ApolloProvider>;
+  <Provider store={store}>
+    <App />
+  </Provider>
+</ApolloProvider>;

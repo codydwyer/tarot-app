@@ -7,6 +7,8 @@ export default defineConfig({
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
       '@graphql': path.resolve(__dirname, './src/graphql'),
+      '@hooks': path.resolve(__dirname, './src/hooks'),
+      '@redux': path.resolve(__dirname, './src/redux'),
       '@setup': path.resolve(__dirname, './src/setup'),
       '@layout': path.resolve(__dirname, './src/layout'),
     },

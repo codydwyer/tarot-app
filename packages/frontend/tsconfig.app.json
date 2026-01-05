@@ -31,6 +31,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@graphql/*": ["src/graphql/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@redux/*": ["src/redux/*"],
       "@setup/*": ["src/setup/*"],
       "@layout/*": ["src/layout/*"]
     },
