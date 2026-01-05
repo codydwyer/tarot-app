@@ -7,10 +7,10 @@
   "private": true,
   "workspaces": [
     "frontend",
-    "backend"
+    "graphql"
   ],
   "scripts": {
-    "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\""
+    "dev": "concurrently \"yarn workspace graphql dev\" \"yarn workspace frontend dev\""
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
