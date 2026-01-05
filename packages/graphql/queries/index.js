@@ -15,6 +15,6 @@ const RootQuery = new GraphQLObjectType({
     spread: spreadQuery,
     theme: themeQuery
   }
-})
+});
 
 export default RootQuery;
