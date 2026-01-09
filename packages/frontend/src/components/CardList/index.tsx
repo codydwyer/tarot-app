@@ -1,6 +1,7 @@
-import { type ReactElement } from 'react';
+import { type ReactElement, useState } from 'react';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client/react';
+import CardItem, { type Card } from '@components/CardItem';
 
 const GET_CARDS = gql`
   query GetCards {
@@ -15,17 +16,21 @@ const GET_CARDS = gql`
   }
 `;
 
+export type CardsData = {
+  cards: Card[];
+};
+
 export default ():ReactElement => {
+  const [ showing, setShowing ] = useState<boolean>(false);
   const { loading, error, data } = useQuery(GET_CARDS);
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p style={{ color: "red" }}>Error: {error.message}</p>;
 
   return <>
-    <h2>Card List</h2>   
-    {data && data.cards.map(({ id, name }: { id: string; name: string }) => (
-      <div key={id}>
-        <p>{name}</p>
-      </div>
-    ))}   
+    <h2>Card List <button onClick={() => setShowing(!showing)}>{showing ? 'Hide' : 'Show'}</button></h2>   
+    {showing && (<div>{data as CardsData && data.cards.map((card: Card) => (
+      <CardItem key={card.id} card={card} />
+    ))}</div>)}   
   </>
 }
