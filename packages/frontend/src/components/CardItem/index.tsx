@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import './CardItem.style.css';
+import './styles.css';
 
 export type Card = {
   id: string;

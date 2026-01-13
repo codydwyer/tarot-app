@@ -1,13 +1,16 @@
-import type { ReactElement } from 'react';
-import { BasicWorkflow, CardList, CardMeaning, DeckList,  ThemeList, SpreadList } from '@components/index';
+import type { ReactElement, ReactNode } from 'react';
+import Footer from '@layout/Footer';
+import Header from '@layout/Header';
+import Main from '@layout/Main';
 
-export default ():ReactElement => <>
-  <div>
-    <CardList />
-    <DeckList />
-    <SpreadList />
-    <ThemeList />
-  </div>
-  <BasicWorkflow /> 
-  <CardMeaning />
+import './styles.css';
+
+type DefaultLayoutProps = {
+  children: ReactNode;
+}
+
+export default (props: DefaultLayoutProps):ReactElement => <>
+  <Header />
+  <Main>{props.children}</Main >
+  <Footer />
 </>

@@ -32,9 +32,10 @@
       "@components/*": ["src/components/*"],
       "@graphql/*": ["src/graphql/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@layout/*": ["src/layout/*"],
+      "@routes/*": ["src/routes/*"],
       "@redux/*": ["src/redux/*"],
-      "@setup/*": ["src/setup/*"],
-      "@layout/*": ["src/layout/*"]
+      "@setup/*": ["src/setup/*"]
     },
   },
   "include": ["src", "**/*.ts", "**/*.tsx"]
