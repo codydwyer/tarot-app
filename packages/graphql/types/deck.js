@@ -7,7 +7,7 @@ const DeckType = new GraphQLObjectType({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
     description: { type: GraphQLString },
-    cards: { type: new GraphQLList(CardType) } // This can be modified to a list type if needed
+    cards: { type: new GraphQLList(CardType) }
   }
 });
 
