@@ -13,6 +13,10 @@ This app has three main functionalities:
 ### Start dev packages
 
 ```
+// install dependencies
+yarn
+
+// launch all dev servers
 yarn dev
 ```
 
