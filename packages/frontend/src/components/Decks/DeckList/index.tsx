@@ -1,7 +1,7 @@
 import { type ReactElement, useState } from 'react';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client/react';
-import DeckItem, { type Deck } from '@components/DeckItem';
+import DeckItem, { type Deck } from '../DeckItem';
 import './styles.css'
 
 const GET_DECKS = gql`

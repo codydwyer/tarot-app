@@ -1,8 +1,9 @@
 import type { ReactElement } from 'react';
-import { SpreadList } from '@components/index';
+import { CreateSpread, SpreadList } from '@components/index';
 import DefaultLayout from '@layout/DefaultLayout';
 
 export default ():ReactElement => <DefaultLayout>
-  Spreads
-    <SpreadList />
+  <h1>Spreads</h1>
+  <SpreadList />
+  <CreateSpread />
 </DefaultLayout>

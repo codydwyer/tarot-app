@@ -2,12 +2,10 @@ import axios from 'axios';
 import { dbUrl } from '../conf.js';
 import cardResolver from './cardResolver.js';
 
-const deckResolver = async (parent, args) => {
+const deckResolver = async (_parent, args) => {
   const deckUrl = `${dbUrl}/decks/${args.id}`; 
   const deckCardsUrl = `${dbUrl}/decks_cards?deckId=${args.id}`; 
-
   console.log('Fetching deck from URL:', deckUrl);
-  console.log('Fetching deck cards from URL:', deckCardsUrl);
 
   const deck = await axios.get(deckUrl).then(response => response.data);
   const deckCards = await axios.get(deckCardsUrl).then(response => response.data);

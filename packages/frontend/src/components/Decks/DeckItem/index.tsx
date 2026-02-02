@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import { type Card } from '@components/CardItem';
+import { type Card } from '@components/Cards/CardItem';
 import './styles.css'
 
 export type Deck = {

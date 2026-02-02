@@ -3,6 +3,6 @@ import { BasicWorkflow } from '@components/index';
 import DefaultLayout from '@layout/DefaultLayout';
 
 export default ():ReactElement => <DefaultLayout>
-  Pull
+  <h1>Pull Cards</h1>
     <BasicWorkflow /> 
 </DefaultLayout>

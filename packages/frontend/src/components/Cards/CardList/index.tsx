@@ -1,7 +1,7 @@
 import { type ReactElement, useState } from 'react';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client/react';
-import CardItem, { type Card } from '@components/CardItem';
+import CardItem, { type Card } from '@components/Cards/CardItem';
 import './styles.css'
 
 const GET_CARDS = gql`

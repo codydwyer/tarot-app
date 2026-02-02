@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
+import './styles.css';
 
 export default ():ReactElement => <>
-  <h2>Theme List</h2>      
+  <h2>Edit Theme</h2>      
 </>

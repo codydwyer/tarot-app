@@ -3,7 +3,7 @@ import { BasicWorkflow, CardList, CardMeaning, DeckList,  ThemeList, SpreadList 
 import DefaultLayout from '@layout/DefaultLayout';
 
 export default ():ReactElement => <DefaultLayout>
-  Home
+  <h1>Home</h1>
     <div>
       <CardList />
       <DeckList />
