@@ -1,3 +1,4 @@
+export type { Deck } from './DeckItem';
 export { default as DeckItem } from './DeckItem';
 export { default as DeckList } from './DeckList';
 export { default as DeleteDeck } from './DeleteDeck';

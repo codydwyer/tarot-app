@@ -1,4 +1,4 @@
-export { default as CardItem } from './CardItem';
+export type { Card } from './CardItem';
 export { default as CardList } from './CardList';
 export { default as CardMeaning } from './CardMeaning'; 
 export { default as DeleteCard } from './DeleteCard';

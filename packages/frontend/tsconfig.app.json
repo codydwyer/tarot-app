@@ -25,18 +25,23 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
+    "esModuleInterop": true,
+     
+    "allowSyntheticDefaultImports": true,
+
     /* Path aliases */
     "outDir": "./dist", 
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@graphql/*": ["src/graphql/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@layout/*": ["src/layout/*"],
-      "@routes/*": ["src/routes/*"],
-      "@redux/*": ["src/redux/*"],
-      "@setup/*": ["src/setup/*"]
+      "@components/*": ["./src/components/*"],
+      "@graphql/*": ["./src/graphql/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@setup/*": ["./src/setup/*"]
     },
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

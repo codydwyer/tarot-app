@@ -3,11 +3,11 @@ import './styles.css';
 
 export type Card = {
   id: string;
-  arcana: string;
-  image: string;
-  name: string;
-  number: number;
-  suit: string;
+  name?: string;
+  arcana?: string;
+  image?: string;
+  number?: number;
+  suit?: string;
 };
 
 export default ({ card }: { card: Card }):ReactElement => {

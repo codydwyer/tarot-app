@@ -5,14 +5,19 @@
   "author": "Cody Dwyer",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev:frontend": "yarn --cwd packages/frontend dev",
     "dev:graphql": "yarn --cwd packages/graphql dev",
     "dev:database": "yarn --cwd packages/database dev",
-    "dev": "concurrently \"yarn dev:database\" \"yarn dev:graphql\" \"yarn dev:frontend\""
+    "dev": "concurrently \"yarn dev:database\" \"yarn dev:graphql\" \"yarn dev:frontend\"",
+    "coverage": "yarn --cwd packages/frontend test:coverage",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "husky": "^9.1.7"
   }
 }
