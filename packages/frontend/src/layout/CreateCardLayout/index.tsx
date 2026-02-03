@@ -1,9 +1,6 @@
 import type { ReactElement } from 'react';
-import { CardList, CreateCardButton } from '@components/index';
 import DefaultLayout from '@layout/DefaultLayout';
 
 export default ():ReactElement => <DefaultLayout>
-  <h1>Cards</h1>
-  <CardList />
-  <CreateCardButton /> 
+  <h1>Create Card</h1>
 </DefaultLayout>

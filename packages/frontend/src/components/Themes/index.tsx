@@ -3,3 +3,4 @@ export { default as ThemeList } from './ThemeList';
 export { default as DeleteTheme } from './DeleteTheme';
 export { default as EditTheme } from './EditTheme';   
 export { default as CreateTheme } from './CreateTheme';  
+export { default as CreateThemeButton } from './CreateThemeButton';

@@ -1,3 +1,7 @@
+export { default as CreateSpreadLayout } from './CreateSpreadLayout';
+export { default as CreateDeckLayout } from './CreateDeckLayout';
+export { default as CreateCardLayout } from './CreateCardLayout';
+export { default as CreateThemeLayout } from './CreateThemeLayout';
 export { default as DefaultLayout } from './DefaultLayout';
 export { default as HomeLayout } from './HomeLayout';
 export { default as PullLayout } from './PullLayout';
